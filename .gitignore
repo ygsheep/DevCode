@@ -34,4 +34,4 @@
 build/
 cmake_build_Debug/
 temp/
-
+.vs/
