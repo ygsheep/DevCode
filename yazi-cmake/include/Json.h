@@ -113,7 +113,7 @@ namespace yazi
 
 			size_t size() const;
 			void clear();
-			void karser(const std::string& data, bool isFile = false);
+			void parser(const std::string& data, bool isFile = false);
 			string str() const;
 
 			~Json();
