@@ -31,7 +31,6 @@
 *.out
 *.app
 
-build/
-cmake_build_Debug/
+build*/
 temp/
 .vs/
