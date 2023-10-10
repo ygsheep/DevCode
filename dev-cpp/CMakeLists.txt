@@ -1,10 +1,11 @@
 cmake_minimum_required(VERSION 3.2.0)
 # specify the C++ standard
-set(CMAKE_CXX_STANDARD 20)
-set(CMAKE_CXX_STANDARD_REQUIRED True)
+# set(CMAKE_CXX_STANDARD 20)
+# set(CMAKE_CXX_STANDARD_REQUIRED True)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Werror -std=c++20")
 
 # set the project name
-project(Example)
+project(Test)
 
 
 
@@ -21,8 +22,4 @@ add_executable(${CMAKE_PROJECT_NAME} ${SRC_FILES})
 
 
 find_package(fmt CONFIG REQUIRED)
-find_package(ftxui CONFIG REQUIRED)
 target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE fmt::fmt)
-target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE ftxui::dom ftxui::screen ftxui::component)
-
-

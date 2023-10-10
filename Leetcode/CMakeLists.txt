@@ -9,10 +9,9 @@ project(Example)
 
 
 file(GLOB SRC_FILES
-	"${PROJECT_SOURCE_DIR}/*.cpp"
-	"${PROJECT_SOURCE_DIR}/*.c"
-	"${PROJECT_SOURCE_DIR}/include/*.h"
-	"${PROJECT_SOURCE_DIR}/include/*.hpp"
+	"${PROJECT_SOURCE_DIR}/cpp/*.cpp"
+	"${PROJECT_SOURCE_DIR}/cpp/include/*.h"
+	"${PROJECT_SOURCE_DIR}/cpp/include/*.hpp"
 	)
 
 # add_library(main STATIC ${SRC_FILES})
